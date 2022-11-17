@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+form{
+    width:24vw;
+    height:16vw;
+    border:2px black solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+label,input{
+    display:block;
+    width:80%;
+    margin:0 auto;
+}
+
+input{
+    padding:0px;
+}
+
+input[type=submit]{
+    margin-top:0.9vh;
+    border:none;
+    padding:4px 0;
+    background-color:#3c3cb8;
+    cursor:pointer;
+    font-size:1.1rem;
+}
+
+input[type=submit]:hover{
+    background-color:white;
+    color:#000080;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

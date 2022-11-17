@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#form-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding-top:15vh;
+}
+form{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+}
+
+form input{
+    padding:6px;
+}
+
+form label{
+    font-weight:700;
+    font-size:1.2rem;
+    margin-bottom:2vh;
+}
+
+form #body_content{
+    display:none;
+}
+
+form #editor{
+    height:40vh;
+}
+
+form input[type=submit]{
+    background-color:#14149f;
+    color:white;
+    font-size:1.2rem;
+    font-weight:700;
+    cursor:pointer;
+}
+
+form input[type=submit]:hover{
+    background-color:black;
+    color:white;
+}
+
+#message-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#message-container h1{
+    color:orangered;
+}
+

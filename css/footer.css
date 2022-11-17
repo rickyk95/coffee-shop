@@ -1,0 +1,51 @@
+footer{
+    height:30vh;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.column{
+    text-align:center;
+}
+
+.column h2{
+    text-align:center;
+}
+
+footer a{
+    color:white;
+}
+
+.arrow-up-column{
+    text-align:center;
+}
+.fa-circle-arrow-up{
+    font-size:3rem;
+    cursor:pointer;
+    margin-top:1.5vh;
+}
+
+.fa-circle-arrow-up:hover{
+    color:maroon;
+}
+
+@media screen and (max-width:612px){
+
+    footer{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .column {
+        width:100%;
+    }
+
+    .column h2, .column h3{
+        text-align:center;
+        margin:2vh 0;
+    }
+  
+}

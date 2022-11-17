@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.title-container,.meta-description-container{
+    width:100vw;
+}
+
+.title-container{
+    margin-top:12vh;
+}
+
+.title,.meta-description,.body{
+  padding:1.5vh 10vw;
+}
+
+.post-image-container{
+    width:100vw;
+    height:auto;
+    text-align:center;
+}
+.post-image{
+    height:auto;
+    width: 80%;
+}

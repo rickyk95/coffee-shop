@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#menu-header{
+    text-align:center;
+    font-weight:700;
+    width:100%;
+    height:100%;
+    background-image:url('../images/menu-header-2.jpg');
+    position:relative;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-repeat:no-repeat;
+}
+
+#menu-header h1 {
+    color:white;
+    font-size:4rem;
+    font-weight:bold;
+    z-index:1000;
+    font-style:sans-serif;
+}
+
+#menu-header::after{
+    content:'';
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:black;
+    position:absolute;
+    opacity:0.35;
+}
+
+
+/* .menu-switcher-container{
+    display:block;
+    padding:6vh 0;
+}   */
+
+.menu-switcher-container{
+    display:flex;
+    justify-content:space-evenly;
+    padding:6vh 0;
+}
+
+.menu-switcher-container button{
+    background-color:transparent;
+    padding:1.6vw 2.3vw;
+    border:1px maroon solid;
+    cursor:pointer;
+    font-size:.8rem;
+    font-weight:700;
+    font-family:sans-serif;
+    color:maroon;
+}
+
+.menu-switcher-container button:hover{
+    background-color:maroon;
+    color:white;
+}
+.menu-switcher-container select{
+    margin-left:auto;
+    margin-right:6vw;
+    margin-bottom:2vh;
+}
+
+.menu-container{
+    height:auto;
+    display:block;
+    position:relative;
+    width:100%;
+    height:80%;
+    padding:0;
+    margin:0;
+}
+
+.menu-item{
+    background-color:white;;
+    /* box-shadow:2px 2px 2px black; */
+    /* padding:35px 0; */
+    width:21.5%;
+    width:40%;
+    height:20%;
+    display:flex;
+    transition:top 1s ease, left 1s ease;
+    top:0;
+    left:0;
+    margin:0;
+    box-shadow:1px 1px 4px black;
+    cursor:pointer;
+    transition:top 1s ease-in-out, left 1s ease-in-out,transform 400ms ease-in-out;
+}
+
+.menu-item:hover{
+    transform:scale(1.068);
+}
+
+.item-desc {
+    padding-left:20px;
+}
+
+.item-desc h6{
+    font-size:1.1rem;
+}
+
+#buffer{
+    height:100vh;
+    display:none;
+}
+
+@media screen and (max-width:612px){
+    .menu-container{
+        height:100%;
+    }
+    .menu-item{
+        width:100%;
+        height:15%;
+    }
+
+    #buffer{
+        display:block;
+    }
+
+}
+
+
+
